@@ -42,8 +42,8 @@ public class BinaryTree {
         if (root == null) {
             return;
         }
-        preOrder(root.leftChild);
         System.out.print(root.val + " ");
+        preOrder(root.leftChild);
         preOrder(root.rightChild);
     }
 
@@ -52,9 +52,9 @@ public class BinaryTree {
         if (root == null) {
             return;
         }
+        midOrder(root.leftChild);
         System.out.print(root.val + " ");
-        preOrder(root.leftChild);
-        preOrder(root.rightChild);
+        midOrder(root.rightChild);
     }
 
     //后序遍历
@@ -62,8 +62,8 @@ public class BinaryTree {
         if (root == null) {
             return;
         }
-        preOrder(root.leftChild);
-        preOrder(root.rightChild);
+        postOrder(root.leftChild);
+        postOrder(root.rightChild);
         System.out.print(root.val + " ");
     }
 
@@ -75,7 +75,6 @@ public class BinaryTree {
         tree.midOrder(tree);
         System.out.println("\n后序遍历");
         tree.postOrder(tree);
-
     }
 
 }
