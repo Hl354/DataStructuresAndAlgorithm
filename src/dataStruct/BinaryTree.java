@@ -1,5 +1,8 @@
 package dataStruct;
 
+/**
+ * 前序、中序、后序遍历的前、中、后指的是根节点所遍历的顺序
+ */
 public class BinaryTree {
 
     // 节点值
